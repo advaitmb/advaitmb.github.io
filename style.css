@@ -835,12 +835,42 @@ hr {
         margin-top: 40px;
     }
 
+    .site-title {
+        gap: 0.08em;
+    }
+
+    .site-title .strange {
+        letter-spacing: 1px;
+    }
+
+    .site-title:hover .strange,
+    .site-title .strange.stretched,
+    .stretchable:hover,
+    .stretchable:focus-visible,
+    .stretchable.stretched {
+        letter-spacing: 2px;
+    }
+
     .strange {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .strange-light {
         font-size: 20px;
+    }
+
+    .section {
+        font-size: 16px;
+    }
+
+    .gridTitle {
+        font-size: 15px;
+        line-height: 1.16;
+    }
+
+    .gridSubtitle {
+        margin-top: 8px;
+        font-size: 15px;
     }
 
     .comparison-table {
