@@ -1,0 +1,59 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% Author:
+% Christophe Roger (Darwiin)
+%
+% Modified by:
+% Advait Bhat
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv}
+\usepackage[en-US]{datetime2}
+
+% \tagline{Curriculum Vitae/Resume for Computer Science \& Engineering Ph.D., University of Michigan}
+
+% \tagline{Pre-Doctoral Research Fellow, Microsoft Research}
+\tagline{PhD Student, University of Washington}
+
+\name{}{Advait Bhat}
+
+
+
+\socialinfo{
+\website{advaitmb.com}
+\email{advaitmb@cs.washington.edu}
+\scholar{https://scholar.google.com/citations?user=lFBWQb0AAAAJ}
+	\vspace{-3mm}
+
+}
+\usepackage{hyperref}
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{emoji}
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+	\makecvheader
+ %    \DTMlangsetup{showdayofmonth=false}
+	% \makecvfooter
+	% 	{\textsc{\selectlanguage{english}\today}}
+	% 	{\textsc{Advait Bhat}}
+	% 	{\thepage}
+
+    \input{sections/0_education}
+    \input{sections/headline}
+    \input{sections/1_experience}
+    \input{sections/2_publications}
+    \input{sections/3_projects}
+    \input{sections/media}
+	\input{sections/talks}
+	\input{sections/awards}
+ 	\input{sections/service}
+  	\input{sections/designsoftware}
+	\input{sections/teaching}
+    \input{sections/references}
+
+\end{document}
