@@ -535,7 +535,7 @@ hr {
 }
 
 .gridSubtitle {
-    margin-top: calc(10px * var(--ui-scale));
+    margin-top: calc(2px * var(--ui-scale));
     font-size: calc(17px * var(--ui-scale));
     color: var(--card-accent);
 }
