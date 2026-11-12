@@ -964,3 +964,95 @@ hr {
         font-size: 13px;
     }
 }
+
+@media print {
+    :root {
+        --ui-scale: 1;
+        --color-accent: rgba(85, 0, 61, 0.86);
+        --color-accent-soft: rgba(85, 0, 61, 0.32);
+        --color-grid: rgba(150, 72, 124, 0.24);
+        --color-grid-fill: rgba(150, 72, 124, 0.05);
+        --color-success: rgba(1, 50, 21, 0.82);
+    }
+
+    @page {
+        size: A4;
+        margin: 12mm 10mm 12mm 10mm;
+    }
+
+    body {
+        font-size: 11px;
+    }
+
+    .text {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .content {
+        padding: 0 15px;
+    }
+
+    .title {
+        margin-top: 0;
+    }
+
+    .strange {
+        font-size: 22px;
+    }
+
+    .section {
+        font-size: 13px;
+    }
+
+    .monospace {
+        font-size: 12px;
+    }
+
+    .publication,
+    .experience {
+        padding: 6px 15px 8px;
+        break-inside: avoid;
+    }
+
+    .section-link {
+        padding-top: 8px;
+    }
+
+    .experience ul {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .experience li {
+        margin-bottom: 2px;
+    }
+
+    .homepage main::before,
+    .homepage main::after {
+        display: none;
+    }
+
+    .homepage main {
+        background: none;
+    }
+
+    .stretchable:hover,
+    .stretchable:focus-visible {
+        letter-spacing: inherit;
+        color: inherit;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    .bodyLink,
+    .pubLink {
+        text-decoration: none;
+    }
+
+    #attr {
+        display: none;
+    }
+}
